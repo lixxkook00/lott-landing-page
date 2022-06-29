@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- HEADER PC -->
+    <div class="header hidden-m-t">
+        <div class="container">
+            <header>
+                <ul class="header-list">
+                    <li data-address="intro" class="header-item">
+                        TRANG CHỦ
+                    </li>
+                    <li data-address="why" class="header-item">
+                        GIỚI THIỆU
+                    </li>
+                    <li data-address="compare" class="header-item">
+                        ƯU & NHƯỢC ĐIỂM
+                    </li>
+                    <li data-address="product" class="header-item">
+                        TƯƠNG LAI
+                    </li>
+                    <li data-address="formal" class="header-item">
+                        XỔ SỐ BLOCKCHAIN
+                    </li>
+                    <li data-address="social" class="header-item">
+                        HƯỚNG DẪN SỬ DỤNG
+                    </li>
+                </ul>
+            </header>
+        </div>
+        
+    </div>
+
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <div class="header-mobile-logo">
+            <img src="./img/product-2.png" alt="">
+        </div>
+        <div class="header-mobile-icon" onclick="toggleNavMobile()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <li class="soft-menu__item dark-modes">
+                <a data-address="intro" class="header-mobile-logo">
+                    <img src="./img/product-2.png" alt="">
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item--active">
+                <a data-address="">
+                    <i class="fas fa-home"></i>TRANG CHỦ
+                </a>
+            </li>
+            <li class="soft-menu__item">
+                <a data-address="why">
+                    <i class="fa-solid fa-address-card"></i> GIỚI THIỆU
+                </a>
+            </li>
+            <li class="soft-menu__item">
+                <a data-address="formal">
+                    <i class="fa-solid fa-ticket"></i>XỔ SỐ BLOCKCHAIN
+                </a>
+            </li>
+            
+            <li class="soft-menu__item">
+                <a data-address="compare">
+                    <i class="fa-solid fa-code-compare"></i> ƯU & NHƯỢC ĐIỂM
+                </a>
+            </li>
+            <li class="soft-menu__item">
+                <a data-address="product">
+                    <i class="fa-solid fa-boxes-stacked"></i>TƯƠNG LAI
+                </a>
+            </li>
+            <li class="soft-menu__item">
+                <a data-address="social">
+                    <i class="fa-solid fa-circle-info"></i>HƯỚNG DẪN SỬ DỤNG
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- INTRO -->
+    <section id="intro" class="intro centering">
+        <div class="container">
+            <div class="row">
+                <!-- Title -->
+                <div class="col-xl-6 col-lg-6 col-md-12 centering">
+                    <div class="intro-content centering-column">
+                        <div class="intro-sub-title">
+                            NHỮNG NGƯỜI TRÚNG SỐ
+                        </div>
+                        <div class="intro-title">
+                            ĐỀU LÀ "GIẢ"?
+                        </div>
+                        <div class="intro-line">------------------</div>
+                        <div class="intro-desc">
+                            Xổ số là một trò chơi quay số có thưởng quen thuộc với rất nhiều người, tuy nhiên có nhiều ý kiến cho rằng nó vẫn chưa được minh bạch.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- img -->
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <img src="./img/img-intro.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY -->
+    <section id="why" class="why centering">
+        <div class="container">
+            <div class="row">
+                <!-- Title -->
+                <div class="col-xl-6 centering">
+                    <div class="why-content centering-column">
+                        <div class="why-sub-title">
+                            Tại sao mọi người lại thích xổ số
+                        </div>
+                        <div class="why-title">
+                            Xổ số là một trò chơi giải trí rẻ tiền nhưng đầy tính hấp dẫn.
+                        </div>
+                        <div class="why-desc">
+                            Một trả lời rất rõ ràng: Chúng ta sẵn sàng bỏ ra 10.000 đồng để đổi lấy hy vọng, để có niềm vui mơ tưởng về những điều tốt đẹp sẽ đến nếu bỗng nhiên chúng ta có hàng chục tỷ trong tay. Hầu hết người chơi xổ số đều biết tỉ lệ trúng số rất thấp, nhưng tấm vé số lại là cách rẻ tiền hấp dẫn để mơ mộng về một cuộc sống tốt đẹp hơn.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- img -->
+                <div class="col-xl-6">
+                    <img src="./img/img-why.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMAL -->
+    <section id="formal" class="formal">
+        <div class="container">
+            <div class="centering m30-v">
+                <div class="primary-title">
+                    hình thức xổ số tại Việt Nam
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="formal-item">
+                        <div class="formal-item-title">
+                            Xổ số kiến thiết
+                        </div>
+                        <div class="formal-item-img">
+                            <img src="./img/img-formal-2.png" alt="">
+                        </div>
+                        <div class="formal-item-desc">
+                            Trò chơi quay thưởng góp phần xây dựng đất nước do Nhà Nước phát hành bằng những tấm vé số
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="formal-item">
+                        <div class="formal-item-title">
+                            Xổ số tự chọn
+                        </div>
+                        <div class="formal-item-img">
+                            <img src="./img/img-formal-1.png" alt="">
+                        </div>
+                        <div class="formal-item-desc">
+                            Loại hình xổ số mà người mua được quyền lựa chọn những con số, những lô ưa thích để tham gia dự thưởng
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-12">
+                    <div class="formal-content">
+
+                        <div class="formal-content-title">
+                            Tại sao nhiều người nghĩ việc trúng số 
+                            <span class="primary">
+                                đều là “giả” ?
+                            </span>
+                        </div>
+
+                        <div class="formal-content-line">
+                            Có rất nhiều người cả đời chơi xổ số nhưng giải độc đắc thì chẳng thấy đâu! 
+                        </div>
+
+                        <div class="formal-content-line">
+                            Việc trúng những giải thưởng lớn trở nên rất mơ hồ, nhiều người vẫn nghĩ những người trúng giải đều được các công ty xổ số cài vào để tạo hiệu ứng gây thích thú. 
+                        </div>
+
+                        <div class="formal-content-line">
+                            Còn bạn sẽ nghĩ thế nào? Đây có phải là “cú lừa”? Hình thức quay số trúng thưởng của xổ số thông thường chúng ta vẫn hay chơi vẫn luôn không rõ ràng, minh bạch, nó vẫn còn là một ẩn số. Điều này khiến nhiều người không khỏi nghi ngờ. Để giải quyết sự nghi ngờ này thì trò chơi xổ số cần phải cải tiến trong quá trình quay thưởng và trả thưởng một cách công khai rõ ràng.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="centering m30-v">
+                <div class="primary-title">
+                    Ngành xổ số sẽ thay đổi như thế nào trong tương lai ?
+                </div>
+            </div>
+            <div class="paragraph">
+                Liệu bạn có tò mò trong tương lai ngành xổ số sẽ tiếp tục phát triển mạnh mẽ hay sẽ bị thay thế bằng những thứ mới hơn? 
+            </div>
+            <div class="paragraph">
+                Thời đại công nghệ số mọi thứ luôn luôn đổi mới để bắt kịp xu hướng. Blockchain hiện tại là một trong những công nghệ top đầu thế giới, khẳng định sẽ là bước đột phá trong tương lai. Khi ứng dụng công nghệ blockchain vào xổ số:
+            </div>
+            <div class="row">
+                <!-- Title -->
+                <div class="col-xl-6 centering">
+                    <div class="formal-list centering-column">
+                        <div class="formal-item-2">
+                            Không lo sợ đây là trò chơi mạo danh, lừa đảo vì đặc tính không thể làm giả của blockchain.
+                        </div>
+                        <div class="formal-item-2 ">
+                            Tính năng bảo mật an toàn tuyệt đối vì vậy rất khó để đánh sập hệ thống, lấy đi tiền hoặc thông tin của khách hàng.
+                        </div>
+                        <div class="formal-item-2 ">
+                            Tính minh bạch rõ ràng trong quá trình quay thưởng, số người tham gia hay những người trúng thưởng đều sẽ được công khai.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- img -->
+                <div class="col-xl-6">
+                    <img src="./img/img-formal-3.png" alt="">
+                </div>
+            </div>
+            <div class="paragraph paragraph-strong">
+                Có thể khẳng định đây chính là một mô hình rất tiềm năng và sẽ phát triển mạnh mẽ trong tương lai.
+            </div>
+            <div class="paragraph">
+                Không chỉ nói đến tương lai, ở hiện tại cũng đã có một số dự án Xổ số đã và đang được nghiên cứu phát triển áp dụng công nghệ vào bên trong hệ thống. Việc bạn là một trong những người tiên phong sử dụng các trò chơi xổ số này sẽ là một lợi thế rất lớn trong tương lai. Khi mọi người vẫn còn đang mơ hồ tiếp cận đến nó thì bạn đã là một dân chơi chuyên nghiệp trong thị trường này.
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARISONS -->
+    <section id="compare" class="compare">
+        <div class="container">
+            <div class="row">
+                <!-- Title -->
+                <div class="col-xl-12 centering">
+                    <div class="intro-content centering-column">
+                        <div class="intro-sub-title">
+                            Ưu và nhược điểm
+                        </div>
+                        <div class="intro-title">
+                            của các loại xổ số
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-12">
+                    <div class="compare-table">
+                        <table style="width:100%">
+                            <tr>
+                                <th class="none"></th>
+                                <th class="active">
+                                    Xổ số truyền thống
+                                </th>
+                                <th class="active">
+                                    Xổ số block chain
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="text-center table-title">Ưu điểm</td>
+                                <td>
+                                    <div class="table-li">
+                                        - Có mặt ở khắp nơi được nhiều người biết đến 
+                                    </div>
+                                    <div class="table-li">
+                                        - Đại lý, người bán vé số ở khắp nơi 
+                                    </div>
+                                    <div class="table-li">
+                                        - Tạo hứng thú và ước mơ thoát khỏi cuộc sống “làm thuê” 
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-li">
+                                        - Không tính thuế khi trúng thưởng
+                                    </div>
+                                    <div class="table-li">
+                                        - Tỷ lệ trúng giải cao hơn các loại xổ số khác 
+                                    </div>
+                                    <div class="table-li">
+                                        - Hệ thống minh bạch, việc quay số trúng thưởng không ai có quyền can thiệp vào
+                                    </div>
+                                    <div class="table-li">
+                                        - Trúng thưởng là nhận ngay cho dù bạn đang ở đâu 
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center table-title">Nhược điểm</td>
+                                <td>
+                                    <div class="table-li">
+                                        - Cơ cấu giải thưởng đơn điệu 
+                                    </div>
+                                    <div class="table-li">
+                                        - Không công khai, minh bạch 
+                                    </div>
+                                    <div class="table-li">
+                                        - Tỷ lệ trúng thưởng thấp 
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-li">
+                                        - Khó sử dụng cho người cao tuổi không am hiểu về công nghệ 
+                                    </div>
+                                    <div class="table-li">
+                                        - Còn mới chưa tiếp cận được nhiều người
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT -->
+    <section id="product" class="product">
+        <div class="container">
+            <!-- Title -->
+            <div class="centering m30-v">
+                <div class="primary-title">
+                    Có những sản phẩm xổ số blockchain nào trên thị trường?
+                </div>
+            </div>
+
+            <div class="product-section">
+                <div class="row">
+                    <div class="col-xl-4 centering">
+                        <img src="./img/product-1.png" alt="">
+                    </div>
+                    <div class="col-xl-8 centering">
+                        <p>
+                            Xổ số Blockchain có thể là một cái tên vẫn còn rất xa lạ đối với như người chơi xổ số theo phương thức truyền thống. Nhưng đối với những ai đã làm quen với blockchain thì đây là một hình thức xổ số rất thú vị mới mẻ. 
+                            <br>
+                            Trong thị trường xổ số trên thế giới đã có rất nhiều hệ thống xổ số được nghiên cứu đưa vào hoạt động, tuy nhiên có rất nhiều trò chơi được làm giả, mạo danh ứng dụng công nghệ blockchain chưa được kiểm chứng. Bên cạnh những lợi ích khi ứng dụng blockchain mang lại thì có rất nhiều kẻ xấu lợi dụng nó để trục lợi. Với những người rất thích chơi xổ số và có mong muốn đầu tư vào nó thì bạn cần phải cân nhắc và đưa ra lựa chọn đúng đắn để không phải mất tiền oan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-section product-section-middle">
+                <div class="row">
+                    <div class="col-xl-8 centering">
+                        <p>
+                            Everyhour 6/49 là trò chơi được phát triển từ Lotto Go 6/49 của Đức đã được cấp phép hoạt động và được rất nhiều người công nhận. Đây một hệ thống xổ số được xây dựng và lưu trữ trên nền tảng blockchain mọi người có thể dễ dàng kiểm tra thông tin vé mua và giải thưởng một cách công khai minh bạch. Giao diện được thiết kế rất dễ sử dụng phù hợp với cả người cao tuổi. Vé được mở bán hàng mỗi giờ, bạn có thể mua vé số vào bất kì thời gian nào trong ngày mà mình muốn.
+                        </p>
+                    </div>
+                    <div class="col-xl-4 centering">
+                        <img src="./img/product-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-section">
+                <div class="row">
+                    <div class="col-xl-4 centering">
+                        <img src="./img/product-3.png" alt="">
+                    </div>
+                    <div class="col-xl-8 centering">
+                        <p>
+                            Với 1$ bạn có thể mua 2 tờ vé số bình thường nhưng cơ hội trúng thưởng thì cực kỳ rất thấp. Tuy nhiên với Everyhour chỉ với 1$ cơ hội trúng thưởng của bạn dễ hơn bao giờ hết. Rất nhiều người đã trúng giải và bạn sẽ là một trong số đó. Chỉ 1$ để trải nghiệm ngại gì không thử? Giải độc đắc đang chờ đợi chủ nhân!!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIALS -->
+    <section id="social" class="social">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 centering">
+                    <a href="" class="social-join-now">
+                        <img src="./img/join-now.png" alt="">
+                    </a>
+                </div>
+                <div class="col-xl-12">
+                    <div class="social-title">
+                        video hướng dẫn
+                    </div>
+                </div>
+                <div class="col-xl-4 col-6">
+                    <a href="" class="social-video">
+                        <img class="p40-h" src="./img/video-1.png" alt="">
+                    </a>
+                </div>
+                <div class="col-xl-4 col-6">
+                    <a href="" class="social-video">
+                        <img class="p40-h" src="./img/video-2.png" alt="">
+                    </a>
+                </div>
+                <div class="col-xl-4 col-6">
+                    <a href="" class="social-video">
+                        <img class="p40-h" src="./img/video-3.png" alt="">
+                    </a>
+                </div>
+                <div class="col-xl-4 col-6">
+                    <a href="" class="social-video">
+                        <img class="p40-h" src="./img/video-1.png" alt="">
+                    </a>
+                </div>
+                <div class="col-xl-4 col-6">
+                    <a href="" class="social-video">
+                        <img class="p40-h" src="./img/video-2.png" alt="">
+                    </a>
+                </div>
+                <div class="col-xl-4 col-6">
+                    <a href="" class="social-video">
+                        <img class="p40-h" src="./img/video-3.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer centering">
+        2020 Copyrights & Protected
+    </div>
+</body>
+</html>
+<script src="./js/main.js"></script>
