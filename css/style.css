@@ -356,8 +356,8 @@ header{
 
 .social-join-now{
     width: 300px;
+    margin-bottom: 10px;
     max-width: 100%;
-
     animation: join-now 1s infinite alternate;
 }
 
@@ -507,6 +507,12 @@ header{
 
 .soft-menu__item.dark-modes img{
     height: 100%;
+}
+.video-title{
+    text-align: center;
+    margin: 4px 0 8px;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 /* ANIMATION */
