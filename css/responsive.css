@@ -134,6 +134,15 @@
     .intro{
         padding-top: 100px;
     }
+
+    .prize-rule{
+        padding-left: 40px;
+    }
+
+    .prize-rule-item{
+        padding: 10px;
+        font-size: 17px;
+    }
 }
 
 /* 500*/
