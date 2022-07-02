@@ -116,7 +116,6 @@ const renderContentVideo = (id) => {
                 <h5 class="modal-title" id="exampleModalLabel">
                     ${videoData.title}
                 </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body centering">
                 <div class="video-content">
